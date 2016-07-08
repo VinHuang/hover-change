@@ -1,0 +1,34 @@
+.hoverDiv {
+  position: relative;
+  background: #939393;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hoverDiv >div:nth-of-type(2):hover {
+  opacity: 0;
+}
+
+.firstDiv {
+  background: red;
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.secondDiv {
+  background: blue;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  width: 50vw;
+  height: 50vh;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
